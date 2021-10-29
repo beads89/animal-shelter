@@ -48,12 +48,12 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-This API uses RESTful principles to create an animal shelter that houses a number of cats and dogs, integrated is Swagger for documentation purposes. Full CRUD has been implemented for both API parameters of Cats and Dogs and is enabled via Swagger. A working MVC is in progress.
+This API uses RESTful principles to create an animal shelter that houses a number of cats and dogs, Swagger has been integrated for documentation purposes. Full CRUD has been implemented for both API parameters of Cats and Dogs and is enabled via Swagger. A working MVC is in progress.
 
 ### 🦠 Known Bugs
 
 * This is not a real API, which is the greatest shame of all.
-* Front-end AnimalClient view is not currently supported. If an instruction includes both AnimalShelter and AnimalClient, please only pay mind to AnimalShelter. All steps involving AnimalClient can safely be ignored, current views will return a 404 not found. 
+* Front-end AnimalClient view is not currently supported. If an instruction includes both AnimalShelter and AnimalClient, please only pay mind to AnimalShelter. All steps involving AnimalClient can safely be ignored, current views will only return a list of Cats. For viewing, please refer to Endpoints under <a href="#🛰️-api-documentation">API Documentation</a>.
 
 ### 🛠 Built With
 * [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
