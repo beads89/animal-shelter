@@ -6,5 +6,6 @@ namespace AnimalShelter.Models
     public string DogName { get; set; }
     public string DogGender { get; set; }
     public string DogBreed { get; set; }
+    public string DogColor { get; set; }
   }
 }
