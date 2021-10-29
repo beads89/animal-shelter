@@ -87,7 +87,7 @@ namespace AnimalShelter
       app.UseSwaggerUI(options =>
       {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "Animal Shelter API");
-              // options.RoutePrefix = "";
+              options.RoutePrefix = "";
             });
     }
   }
