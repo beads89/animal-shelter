@@ -48,11 +48,12 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-This API uses RESTful principles and has integrated Swagger for documentation purposes. Full CRUD has been implemented for both API parameters of Cats and Dogs and is enabled via Swagger.
+This API uses RESTful principles and has integrated Swagger for documentation purposes. Full CRUD has been implemented for both API parameters of Cats and Dogs and is enabled via Swagger. 
 
 ### 🦠 Known Bugs
 
 * This is not a real API, which is the greatest shame of all.
+* MVC is currently WIP.
 
 ### 🛠 Built With
 * [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
