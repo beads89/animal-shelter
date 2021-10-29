@@ -48,12 +48,12 @@
 ## 🌐 About the Project
 
 ### 📖 Description
-This API uses RESTful principles and has integrated Swagger for documentation purposes. Full CRUD has been implemented for both API parameters of Cats and Dogs and is enabled via Swagger. 
+This API uses RESTful principles to create an animal shelter that houses a number of cats and dogs, integrated is Swagger for documentation purposes. Full CRUD has been implemented for both API parameters of Cats and Dogs and is enabled via Swagger. A working MVC is in progress.
 
 ### 🦠 Known Bugs
 
 * This is not a real API, which is the greatest shame of all.
-* MVC is currently WIP.
+* Front-end AnimalClient view is not currently supported. If an instruction includes both AnimalShelter and AnimalClient, please only pay mind to AnimalShelter. All steps involving AnimalClient can safely be ignored, current views will return a 404 not found. 
 
 ### 🛠 Built With
 * [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
@@ -118,24 +118,45 @@ This API uses RESTful principles and has integrated Swagger for documentation pu
   3) Click 'Download ZIP' and unextract.
   4) Open by double clicking on any of the files to open in a text editor.
 
+  #### Enabling the View
+
+  1) Repeat the above Setup and Use steps for the AnimalShelter front-end repository, [AnimalClient](https://github.com/beads89/Animal-Client).
+
   #### AppSettings
 
-  1) Create a new file in the AnimalShelter.Solution/AnimalShelter directory named `appsettings.json`
+  1) Create a new file in the AnimalShelter.Solution/AnimalShelter and the AnimalClient.Solution/AnimalClient directories named `appsettings.json`
   2) Add in the following code snippet to the new appsettings.json file:
-  
+  * **AnimalShelter.Solution/AnimalShelter:**
   ```
 {
-    "Logging": {
-        "LogLevel": {
-        "Default": "Warning"
-        }
-    },
-    "AllowedHosts": "*",
-    "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=animal_shelter;uid=root;pwd=YourPassword;"
-    }
+  "Logging": {
+      "LogLevel": {
+      "Default": "Warning"
+      }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=animal_shelter;uid=root;pwd=YourPassword;"
+  }
 }
   ```
+  * **AnimalClient.Solution/AnimalClient:**
+  ```
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+  "DefaultConnection": "Server=localhost;Port=3306;database=animal_shelter;uid=root;pwd=YourPassword;"
+  }
+}
+  ```
+
   3) Change the server, port, and user id as necessary. Replace 'YourPassword' with relevant MySQL password (set at installation of MySQL).
 
   #### Database
@@ -143,15 +164,17 @@ This API uses RESTful principles and has integrated Swagger for documentation pu
   2) Run the command `dotnet restore` to recover any missing dependencies required to build the database.
   3) Run the command `dotnet ef database update` to generate the database through Entity Framework Core.
   4) (Optional) To update the database with any changes to the code, run the command `dotnet ef migrations add <MigrationsName>` which will use Entity Framework Core's code-first principle to generate a database update. After, run the previous command `dotnet ef database update` to update the database.
+  5) Repeat steps 1 and 2 for AnimalClient.Solution/AnimalClient.
 
   #### Launch the API
   1) Navigate to AnimalShelter.Solution/AnimalShelter directory using the MacOS Terminal or Windows Powershell (e.g. `cd Desktop/AnimalShelter.Solution/AnimalShelter`).
   2) Run the command `dotnet run` to have access to the API in Postman or browser.
+  3) Repeat the above steps for AnimalClient.Solution/AnimalClient.
 
 ------------------------------
 
 ## 🛰️ API Documentation
-Explore the API endpoints in Postman or a browser. You will not be able to utilize authentication in a browser.
+Explore the API endpoints in Postman or a browser.
 
 ### Using Swagger Documentation
 To explore the AnimalShelter.Solution API with NSwag, launch the project using `dotnet run` with the Terminal or Powershell, and input the following URL into your browser: `http://localhost:5000/swagger`
