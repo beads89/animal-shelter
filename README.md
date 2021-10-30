@@ -53,7 +53,7 @@ This API uses RESTful principles to create an animal shelter that houses a numbe
 ### 🦠 Known Bugs
 
 * This is not a real API, which is the greatest shame of all.
-* Front-end AnimalClient view is not currently supported. If an instruction includes both AnimalShelter and AnimalClient, please only pay mind to AnimalShelter. All steps involving AnimalClient can safely be ignored, current views will only return a list of Cats. For viewing, please refer to Endpoints under <a href="#🛰️-api-documentation">API Documentation</a>.
+* Front-end AnimalClient view is not currently supported. If an instruction includes both AnimalShelter and AnimalClient, please only pay mind to AnimalShelter. All steps involving AnimalClient can safely be ignored, current views will only return a list of Cats. For current viewing, please refer to Endpoints under <a href="#🛰️-api-documentation">API Documentation</a>.
 
 ### 🛠 Built With
 * [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
@@ -64,6 +64,8 @@ This API uses RESTful principles to create an animal shelter that houses a numbe
 * [Entity Framework Core 5.0.0](https://docs.microsoft.com/en-us/ef/core/)
 * [Swagger - Swashbuckle 6.2.3](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-3.1&tabs=visual-studio)
 * [Postman](postman.com)
+* [RestSharp](https://restsharp.dev/)
+* [Newtonsoft.Json](https://www.newtonsoft.com/json)
 
 <!-- ### 🔍 Preview -->
 
